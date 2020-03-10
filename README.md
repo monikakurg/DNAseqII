@@ -5,7 +5,6 @@
 
 A lot of bioinformatitians and people who have just started their work in this field handle genomic information on daily basis. Some projects require handling some commands repeatedly on different fasta or fastq files. This toolbox handles some basic and some more advanced commands that can help ease the work. The input files are required to be in fasta or fastq formats. The program prints to standard output, unless defined otherwise. This toolbox contains options such as GC content calculations, convertion, length calculations, translation, amino acid and codon frequrncies calculation.
 
-![](header.png)
 
 ## Version
 
