@@ -19,7 +19,7 @@ parser.add_argument('-gc_positions', dest = 'gc_positions', action = 'store_true
 parser.add_argument('-reverse_comp', dest = 'reverse_comp', action = 'store_true', help = 'return reverse complements in fastq format')
 parser.add_argument('-average_len', dest = 'average_len', action = 'store_true', help = 'return average sequence length of the whole file')
 parser.add_argument('-min_max', dest = 'min_max', action = 'store_true', help = 'return the length of shortest and longest sequences')
-parser.add_argument('-translate', dest = 'translate', action = 'store_true', help = 'translate dna to protein, output in fasta format')
+parser.add_argument('-translate', dest = 'translate', action = 'store_true', help = 'translate dna to protein, input fasta, output in fasta format')
 parser.add_argument('-aa_frequency', dest = 'aa_frequency', action = 'store_true', help = 'calculate')
 parser.add_argument('-codon_frequency', dest = 'codon_frequency', action = 'store_true', help = 'calculate codon frequency in fasta file')
 
@@ -191,6 +191,7 @@ if args.aa_frequency:
         dictionary[letter] = 0
 
     for line in args.infile:
+        for key in dictionary:
             if line[0] != '>':
                 dictionary[key] += line.count(key)
     for letter1 in unknown_letters:
