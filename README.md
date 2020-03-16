@@ -15,7 +15,7 @@ v1.0
 No installation is required. If the program is being used for the first time, make it executable:
 
 ```sh
-chmod +x MKTool.py
+chmod +x ELEFAS.py
 ```
 
 ## Usage example
@@ -23,7 +23,7 @@ chmod +x MKTool.py
 Convert fastq file format in to fasta format
 
 ```sh
-./MKTool.py -i input.fastq -o output.fasta -convert
+./ELEFAS.py -i input.fastq -o output.fasta -convert
 ```
 Translate DNA sequence to protein sequence
 
