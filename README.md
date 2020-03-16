@@ -1,4 +1,4 @@
-# MKTool
+# ELEFAS Toolbox
 > A toolbox designed to handle fasta or fastq files.
 
 ## Description
@@ -28,7 +28,7 @@ Convert fastq file format in to fasta format
 Translate DNA sequence to protein sequence
 
 ```sh
-./MKTool.py -i input.fasta -o output.fasta -translate
+./ELEFAS.py -i input.fasta -o output.fasta -translate
 ```
 ## Available options
 
